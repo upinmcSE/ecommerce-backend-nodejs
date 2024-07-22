@@ -12,6 +12,10 @@ app.use(helmet())
 app.use(compression())
 
 // init database
+require('./db/init.mongodb')
+
+const {checkOverLoad} = require("./helpers/check.connect")
+checkOverLoad()
 
 // init router
 

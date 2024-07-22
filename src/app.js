@@ -1,3 +1,4 @@
+require('dotenv').config
 const expess = require('express')
 const morgan = require('morgan')
 const helmet = require('helmet')
